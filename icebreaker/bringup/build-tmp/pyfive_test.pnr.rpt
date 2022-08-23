@@ -1,0 +1,467 @@
+Info: constrained 'clk_in' to bel 'X12/Y31/io1'
+Info: constrained 'uart_rx' to bel 'X13/Y0/io1'
+Info: constrained 'uart_tx' to bel 'X15/Y0/io0'
+Warning: unmatched constraint 'rgb[0]' (on line 9)
+Warning: unmatched constraint 'rgb[1]' (on line 10)
+Warning: unmatched constraint 'rgb[2]' (on line 11)
+Info: constrained 'dut_vdd' to bel 'X9/Y31/io0'
+Info: constrained 'dut_vdd1' to bel 'X6/Y0/io1'
+Info: constrained 'dut_vdd2' to bel 'X7/Y0/io1'
+Info: constrained 'dut_gpio' to bel 'X8/Y31/io0'
+Info: constrained 'dut_spi_mosi' to bel 'X13/Y31/io1'
+Info: constrained 'dut_xclk' to bel 'X16/Y31/io1'
+Info: constrained 'dut_spi_clk' to bel 'X8/Y31/io1'
+Info: constrained 'dut_spi_miso' to bel 'X9/Y31/io1'
+Info: constrained 'dut_spi_cs_n' to bel 'X16/Y31/io0'
+Info: constrained 'dut_rst_n' to bel 'X17/Y31/io0'
+Info: constrained 'dut_usr[0]' to bel 'X5/Y0/io0'
+Info: constrained 'dut_usr[1]' to bel 'X6/Y0/io0'
+Info: constrained 'dut_usr[2]' to bel 'X7/Y0/io0'
+Info: constrained 'dut_usr[3]' to bel 'X8/Y0/io0'
+Info: constrained 'dut_usr[4]' to bel 'X9/Y0/io1'
+Info: constrained 'dut_usr[5]' to bel 'X9/Y0/io0'
+Info: constrained 'pmod[0]' to bel 'X18/Y31/io1'
+Info: constrained 'pmod[1]' to bel 'X19/Y31/io1'
+Info: constrained 'pmod[2]' to bel 'X18/Y0/io1'
+Info: constrained 'pmod[3]' to bel 'X21/Y0/io1'
+Info: constrained 'pmod[4]' to bel 'X18/Y31/io0'
+Info: constrained 'pmod[5]' to bel 'X19/Y31/io0'
+Info: constrained 'pmod[6]' to bel 'X19/Y0/io1'
+Info: constrained 'pmod[7]' to bel 'X22/Y0/io1'
+Info: constraining clock net 'clk_in' to 12.00 MHz
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: pmod[3] feeds SB_IO io_mapper_I.iob_sense_I[3], removing $nextpnr_iobuf pmod[3].
+Info: pmod[2] feeds SB_IO io_mapper_I.iob_sense_I[2], removing $nextpnr_iobuf pmod[2].
+Info: pmod[1] feeds SB_IO io_mapper_I.iob_sense_I[1], removing $nextpnr_iobuf pmod[1].
+Info: pmod[0] feeds SB_IO io_mapper_I.iob_sense_I[0], removing $nextpnr_iobuf pmod[0].
+Info: dut_usr[5] feeds SB_IO io_mapper_I.iob_drive_I[1], removing $nextpnr_iobuf dut_usr[5].
+Info: dut_usr[4] feeds SB_IO io_mapper_I.iob_drive_I[0], removing $nextpnr_iobuf dut_usr[4].
+Info: dut_usr[0] feeds SB_IO iob_hdmi_clk_I, removing $nextpnr_iobuf dut_usr[0].
+Info: dut_vdd2 feeds SB_IO ctrl_I.pdm_dut_vdd2_I.genblk2.genblk1.genblk1.io_reg_I, removing $nextpnr_obuf dut_vdd2.
+Info: dut_vdd1 feeds SB_IO ctrl_I.pdm_dut_vdd1_I.genblk2.genblk1.genblk1.io_reg_I, removing $nextpnr_obuf dut_vdd1.
+Info: dut_vdd feeds SB_IO ctrl_I.pdm_dut_vdd_I.genblk2.genblk1.genblk1.io_reg_I, removing $nextpnr_obuf dut_vdd.
+Info: pmod[7] feeds SB_IO io_mapper_I.iob_sense_I[7], removing $nextpnr_iobuf pmod[7].
+Info: pmod[6] feeds SB_IO io_mapper_I.iob_sense_I[6], removing $nextpnr_iobuf pmod[6].
+Info: pmod[5] feeds SB_IO io_mapper_I.iob_sense_I[5], removing $nextpnr_iobuf pmod[5].
+Info: pmod[4] feeds SB_IO io_mapper_I.iob_sense_I[4], removing $nextpnr_iobuf pmod[4].
+Info: Packing LUT-FFs..
+Info:      528 LCs used as LUT4 only
+Info:      696 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:      355 LCs used as DFF only
+Info: Packing carries..
+Info:        0 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:        0 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info:   constrained PLL 'crg_I.pll_I' to X12/Y31/pll_3
+Info: Packing special functions..
+Info: Packing PLLs..
+Info:     Input frequency of PLL 'crg_I.pll_I' is constrained to 12.0 MHz
+Info:     VCO frequency of PLL 'crg_I.pll_I' is constrained to 804.5 MHz
+Info:     Derived frequency constraint of 50.3 MHz for net clk
+Info:   PLL 'crg_I.pll_I' has LOCK output, need to pass all outputs via LUT
+Info:   constrained 'crg_I.pll_lock_SB_LUT4_I3_LC' to X1/Y30/lc0
+Info: Constraining chains...
+Info:       22 LCs used to legalise carry chains.
+Info: Checksum: 0x9d28a0a0
+
+Info: Annotating ports with timing budgets for target frequency 12.00 MHz
+Info: Checksum: 0x6e0ff2f1
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:  1605/ 5280    30%
+Info: 	        ICESTORM_RAM:    10/   30    33%
+Info: 	               SB_IO:    27/   96    28%
+Info: 	               SB_GB:     2/    8    25%
+Info: 	        ICESTORM_PLL:     1/    1   100%
+Info: 	         SB_WARMBOOT:     0/    1     0%
+Info: 	        ICESTORM_DSP:     0/    8     0%
+Info: 	      ICESTORM_HFOSC:     0/    1     0%
+Info: 	      ICESTORM_LFOSC:     0/    1     0%
+Info: 	              SB_I2C:     0/    2     0%
+Info: 	              SB_SPI:     0/    2     0%
+Info: 	              IO_I3C:     0/    2     0%
+Info: 	         SB_LEDDA_IP:     0/    1     0%
+Info: 	         SB_RGBA_DRV:     0/    1     0%
+Info: 	      ICESTORM_SPRAM:     0/    4     0%
+
+Info: Placed 30 cells based on constraints.
+Info: Creating initial analytic placement for 1119 cells, random placement wirelen = 35702.
+Info:     at initial placer iter 0, wirelen = 1049
+Info:     at initial placer iter 1, wirelen = 914
+Info:     at initial placer iter 2, wirelen = 956
+Info:     at initial placer iter 3, wirelen = 980
+Info: Running main analytical placer.
+Info:     at iteration #1, type ALL: wirelen solved = 951, spread = 9805, legal = 12158; time = 0.05s
+Info:     at iteration #2, type ALL: wirelen solved = 1040, spread = 9147, legal = 11579; time = 0.05s
+Info:     at iteration #3, type ALL: wirelen solved = 1272, spread = 9172, legal = 11813; time = 0.05s
+Info:     at iteration #4, type ALL: wirelen solved = 1509, spread = 7419, legal = 10107; time = 0.05s
+Info:     at iteration #5, type ALL: wirelen solved = 1767, spread = 7626, legal = 9291; time = 0.04s
+Info:     at iteration #6, type ALL: wirelen solved = 1963, spread = 7130, legal = 9621; time = 0.04s
+Info:     at iteration #7, type ALL: wirelen solved = 2163, spread = 6973, legal = 9847; time = 0.05s
+Info:     at iteration #8, type ALL: wirelen solved = 2144, spread = 6956, legal = 9431; time = 0.05s
+Info:     at iteration #9, type ALL: wirelen solved = 2187, spread = 7026, legal = 9018; time = 0.04s
+Info:     at iteration #10, type ALL: wirelen solved = 2346, spread = 6904, legal = 9968; time = 0.05s
+Info:     at iteration #11, type ALL: wirelen solved = 2365, spread = 6974, legal = 9497; time = 0.04s
+Info:     at iteration #12, type ALL: wirelen solved = 2461, spread = 7007, legal = 8595; time = 0.04s
+Info:     at iteration #13, type ALL: wirelen solved = 2720, spread = 6724, legal = 8372; time = 0.04s
+Info:     at iteration #14, type ALL: wirelen solved = 2658, spread = 6761, legal = 8770; time = 0.04s
+Info:     at iteration #15, type ALL: wirelen solved = 2809, spread = 6805, legal = 8833; time = 0.04s
+Info:     at iteration #16, type ALL: wirelen solved = 2715, spread = 7013, legal = 8643; time = 0.04s
+Info:     at iteration #17, type ALL: wirelen solved = 2896, spread = 7213, legal = 8635; time = 0.04s
+Info:     at iteration #18, type ALL: wirelen solved = 2982, spread = 7311, legal = 8599; time = 0.04s
+Info: HeAP Placer Time: 1.20s
+Info:   of which solving equations: 0.60s
+Info:   of which spreading cells: 0.08s
+Info:   of which strict legalisation: 0.17s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 719, wirelen = 8372
+Info:   at iteration #5: temp = 0.000000, timing cost = 509, wirelen = 6942
+Info:   at iteration #10: temp = 0.000000, timing cost = 620, wirelen = 6570
+Info:   at iteration #15: temp = 0.000000, timing cost = 564, wirelen = 6387
+Info:   at iteration #20: temp = 0.000000, timing cost = 699, wirelen = 6273
+Info:   at iteration #23: temp = 0.000000, timing cost = 688, wirelen = 6262 
+Info: SA placement time 1.54s
+
+Info: Max frequency for clock 'clk': 52.53 MHz (PASS at 50.28 MHz)
+
+Info: Max delay <async>     -> posedge clk: 5.84 ns
+Info: Max delay posedge clk -> <async>    : 7.04 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 34 endpoint(s)
+Info:          + represents [1,34) endpoint(s)
+Info: [   850,   4720) |****+
+Info: [  4720,   8590) |********************+
+Info: [  8590,  12460) |**************+
+Info: [ 12460,  16330) |************************************************************ 
+Info: [ 16330,  20200) |*+
+Info: [ 20200,  24070) | 
+Info: [ 24070,  27940) | 
+Info: [ 27940,  31810) | 
+Info: [ 31810,  35680) | 
+Info: [ 35680,  39550) | 
+Info: [ 39550,  43420) | 
+Info: [ 43420,  47290) | 
+Info: [ 47290,  51160) | 
+Info: [ 51160,  55030) | 
+Info: [ 55030,  58900) | 
+Info: [ 58900,  62770) | 
+Info: [ 62770,  66640) | 
+Info: [ 66640,  70510) | 
+Info: [ 70510,  74380) | 
+Info: [ 74380,  78250) |+
+Info: Checksum: 0x6f5298aa
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 5374 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |       77        895 |   77   895 |      4494|       0.27       0.27|
+Info:       2000 |      254       1498 |  177   603 |      3688|       0.12       0.39|
+Info:       3000 |      520       2180 |  266   682 |      3099|       0.18       0.57|
+Info:       4000 |      859       2814 |  339   634 |      2622|       0.20       0.77|
+Info:       5000 |     1255       3408 |  396   594 |      2218|       0.25       1.02|
+Info:       6000 |     1679       3979 |  424   571 |      1818|       0.25       1.28|
+Info:       7000 |     2148       4485 |  469   506 |      1417|       0.26       1.54|
+Info:       8000 |     2738       4867 |  590   382 |      1173|       0.28       1.82|
+Info:       9000 |     3004       5576 |  266   709 |       493|       0.14       1.96|
+Info:       9899 |     3283       6197 |  279   621 |         0|       0.83       2.78|
+Info: Routing complete.
+Info: Router1 time 2.78s
+Info: Checksum: 0xbccd8962
+
+Info: Critical path report for clock 'clk' (posedge -> posedge):
+Info: curr total
+Info:  1.4  1.4  Source flash_I.flash_I.sui_in_stb_SB_DFF_Q_D_SB_LUT4_O_LC.O
+Info:  1.8  3.2    Net flash_I.flash_I.state_SB_DFF_Q_D_SB_LUT4_O_I1[2] budget 8.056000 ns (7,20) -> (7,19)
+Info:                Sink flash_I.mon_stb_SB_LUT4_O_LC.I2
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/flashemu.v:81.13-81.23
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:83.11-95.3
+Info:  1.2  4.4  Source flash_I.mon_stb_SB_LUT4_O_LC.O
+Info:  3.6  8.0    Net flash_I.mon_stb budget 8.056000 ns (7,19) -> (7,11)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_LC.I1
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:50.14-50.21
+Info:  0.7  8.6  Source flash_I.mon_stb_SB_LUT4_I1_LC.COUT
+Info:  0.0  8.6    Net flash_I.mon_stb_SB_CARRY_I0_CO[1] budget 0.000000 ns (7,11) -> (7,11)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_20_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3  8.9  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_20_LC.COUT
+Info:  0.0  8.9    Net flash_I.mon_stb_SB_CARRY_I0_CO[2] budget 0.000000 ns (7,11) -> (7,11)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_9_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3  9.2  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_9_LC.COUT
+Info:  0.0  9.2    Net flash_I.mon_stb_SB_CARRY_I0_CO[3] budget 0.000000 ns (7,11) -> (7,11)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_6_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3  9.5  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_6_LC.COUT
+Info:  0.0  9.5    Net flash_I.mon_stb_SB_CARRY_I0_CO[4] budget 0.000000 ns (7,11) -> (7,11)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_5_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3  9.7  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_5_LC.COUT
+Info:  0.0  9.7    Net flash_I.mon_stb_SB_CARRY_I0_CO[5] budget 0.000000 ns (7,11) -> (7,11)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_4_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 10.0  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_4_LC.COUT
+Info:  0.0 10.0    Net flash_I.mon_stb_SB_CARRY_I0_CO[6] budget 0.000000 ns (7,11) -> (7,11)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_3_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 10.3  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_3_LC.COUT
+Info:  0.0 10.3    Net flash_I.mon_stb_SB_CARRY_I0_CO[7] budget 0.000000 ns (7,11) -> (7,11)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_2_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 10.6  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_2_LC.COUT
+Info:  0.6 11.1    Net flash_I.mon_stb_SB_CARRY_I0_CO[8] budget 0.560000 ns (7,11) -> (7,12)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_1_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 11.4  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_1_LC.COUT
+Info:  0.0 11.4    Net flash_I.mon_stb_SB_CARRY_I0_CO[9] budget 0.000000 ns (7,12) -> (7,12)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 11.7  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_LC.COUT
+Info:  0.0 11.7    Net flash_I.mon_stb_SB_CARRY_I0_CO[10] budget 0.000000 ns (7,12) -> (7,12)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_30_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 12.0  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_30_LC.COUT
+Info:  0.0 12.0    Net flash_I.mon_stb_SB_CARRY_I0_CO[11] budget 0.000000 ns (7,12) -> (7,12)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_29_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 12.2  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_29_LC.COUT
+Info:  0.0 12.2    Net flash_I.mon_stb_SB_CARRY_I0_CO[12] budget 0.000000 ns (7,12) -> (7,12)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_28_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 12.5  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_28_LC.COUT
+Info:  0.0 12.5    Net flash_I.mon_stb_SB_CARRY_I0_CO[13] budget 0.000000 ns (7,12) -> (7,12)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_27_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 12.8  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_27_LC.COUT
+Info:  0.0 12.8    Net flash_I.mon_stb_SB_CARRY_I0_CO[14] budget 0.000000 ns (7,12) -> (7,12)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_26_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 13.1  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_26_LC.COUT
+Info:  0.0 13.1    Net flash_I.mon_stb_SB_CARRY_I0_CO[15] budget 0.000000 ns (7,12) -> (7,12)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_25_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 13.4  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_25_LC.COUT
+Info:  0.6 13.9    Net flash_I.mon_stb_SB_CARRY_I0_CO[16] budget 0.560000 ns (7,12) -> (7,13)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_24_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 14.2  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_24_LC.COUT
+Info:  0.0 14.2    Net flash_I.mon_stb_SB_CARRY_I0_CO[17] budget 0.000000 ns (7,13) -> (7,13)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_23_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 14.5  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_23_LC.COUT
+Info:  0.0 14.5    Net flash_I.mon_stb_SB_CARRY_I0_CO[18] budget 0.000000 ns (7,13) -> (7,13)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_22_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 14.7  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_22_LC.COUT
+Info:  0.0 14.7    Net flash_I.mon_stb_SB_CARRY_I0_CO[19] budget 0.000000 ns (7,13) -> (7,13)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_21_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 15.0  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_21_LC.COUT
+Info:  0.0 15.0    Net flash_I.mon_stb_SB_CARRY_I0_CO[20] budget 0.000000 ns (7,13) -> (7,13)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_19_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 15.3  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_19_LC.COUT
+Info:  0.0 15.3    Net flash_I.mon_stb_SB_CARRY_I0_CO[21] budget 0.000000 ns (7,13) -> (7,13)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_18_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 15.6  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_18_LC.COUT
+Info:  0.0 15.6    Net flash_I.mon_stb_SB_CARRY_I0_CO[22] budget 0.000000 ns (7,13) -> (7,13)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_17_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 15.9  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_17_LC.COUT
+Info:  0.0 15.9    Net flash_I.mon_stb_SB_CARRY_I0_CO[23] budget 0.000000 ns (7,13) -> (7,13)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_16_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 16.1  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_16_LC.COUT
+Info:  0.6 16.7    Net flash_I.mon_stb_SB_CARRY_I0_CO[24] budget 0.560000 ns (7,13) -> (7,14)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_15_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 17.0  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_15_LC.COUT
+Info:  0.0 17.0    Net flash_I.mon_stb_SB_CARRY_I0_CO[25] budget 0.000000 ns (7,14) -> (7,14)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_14_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 17.2  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_14_LC.COUT
+Info:  0.0 17.2    Net flash_I.mon_stb_SB_CARRY_I0_CO[26] budget 0.000000 ns (7,14) -> (7,14)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_13_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 17.5  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_13_LC.COUT
+Info:  0.0 17.5    Net flash_I.mon_stb_SB_CARRY_I0_CO[27] budget 0.000000 ns (7,14) -> (7,14)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_12_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 17.8  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_12_LC.COUT
+Info:  0.0 17.8    Net flash_I.mon_stb_SB_CARRY_I0_CO[28] budget 0.000000 ns (7,14) -> (7,14)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_11_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 18.1  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_11_LC.COUT
+Info:  0.0 18.1    Net flash_I.mon_stb_SB_CARRY_I0_CO[29] budget 0.000000 ns (7,14) -> (7,14)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_10_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 18.4  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_10_LC.COUT
+Info:  0.0 18.4    Net flash_I.mon_stb_SB_CARRY_I0_CO[30] budget 0.000000 ns (7,14) -> (7,14)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_8_LC.CIN
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 18.6  Source flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_8_LC.COUT
+Info:  0.7 19.3    Net flash_I.mon_stb_SB_CARRY_I0_CO[31] budget 0.660000 ns (7,14) -> (7,14)
+Info:                Sink flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_7_LC.I3
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:102.15-102.32
+Info:                  /usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.8 20.1  Setup flash_I.mon_stb_SB_LUT4_I1_O_SB_LUT4_O_7_LC.I3
+Info: 12.4 ns logic, 7.7 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge clk':
+Info: curr total
+Info:  0.0  0.0  Source dut_spi_cs_n$sb_io.D_IN_0
+Info:  4.9  4.9    Net dut_spi_cs_n$SB_IO_IN budget 18.653999 ns (16,31) -> (9,21)
+Info:                Sink flash_I.flash_I.io_csn_r_SB_DFF_Q_DFFLC.I0
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/flashemu.v:19.14-19.22
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:83.11-95.3
+Info:  1.2  6.2  Setup flash_I.flash_I.io_csn_r_SB_DFF_Q_DFFLC.I0
+Info: 1.2 ns logic, 4.9 ns routing
+
+Info: Critical path report for cross-domain path 'posedge clk' -> '<async>':
+Info: curr total
+Info:  1.4  1.4  Source ctrl_I.ctrl_rst_mode_SB_LUT4_I2_LC.O
+Info:  6.2  7.6    Net dut_rst_n$SB_IO_OUT budget 81.943001 ns (12,11) -> (17,31)
+Info:                Sink dut_rst_n$sb_io.D_OUT_0
+Info:                Defined in:
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/top.v:120.14-134.3
+Info:                  /home/zeeshan/projects/merledu/pyfive-mpw1-postmortem/icebreaker/bringup/rtl/dutif_flash.v:22.21-22.30
+Info: 1.4 ns logic, 6.2 ns routing
+
+ERROR: Max frequency for clock 'clk': 49.69 MHz (FAIL at 50.28 MHz)
+
+Info: Max delay <async>     -> posedge clk: 6.16 ns
+Info: Max delay posedge clk -> <async>    : 7.58 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 24 endpoint(s)
+Info:          + represents [1,24) endpoint(s)
+Info: [  -235,   3662) |**+
+Info: [  3662,   7559) |******************+
+Info: [  7559,  11456) |*********************+
+Info: [ 11456,  15353) |************************************************************ 
+Info: [ 15353,  19250) |*************************************+
+Info: [ 19250,  23147) | 
+Info: [ 23147,  27044) | 
+Info: [ 27044,  30941) | 
+Info: [ 30941,  34838) | 
+Info: [ 34838,  38735) | 
+Info: [ 38735,  42632) | 
+Info: [ 42632,  46529) | 
+Info: [ 46529,  50426) | 
+Info: [ 50426,  54323) | 
+Info: [ 54323,  58220) | 
+Info: [ 58220,  62117) | 
+Info: [ 62117,  66014) | 
+Info: [ 66014,  69911) | 
+Info: [ 69911,  73808) | 
+Info: [ 73808,  77705) |+
+3 warnings, 1 error
+
+Info: Program finished normally.

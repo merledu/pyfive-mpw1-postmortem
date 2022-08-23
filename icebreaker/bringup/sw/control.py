@@ -232,7 +232,7 @@ class BaseTest:
 
 	def build_and_load_fw(self, filename, defs={}):
 		# Env
-		CROSS  = os.getenv('CROSS', 'riscv-none-embed-')
+		CROSS  = os.getenv('CROSS', 'riscv64-unknown-elf-')
 		CFLAGS = os.getenv('CFLAGS', '-march=rv32i -mabi=ilp32 -ffreestanding -nostartfiles --specs=nano.specs -I.')
 
 		# Build the defines
@@ -321,8 +321,8 @@ class SimpleRunnerTest(BaseTest):
 		# Load firmware
 		if self.args.firmware_bin:
 			self.load_fw(self.args.firmware_bin)
-		else:
-			self.build_and_load_fw(self.args.firmware_src)
+		# else:
+		# 	continue # self.build_and_load_fw(self.args.firmware_src)
 
 		# Release reset
 		if self.args.reset_loop:

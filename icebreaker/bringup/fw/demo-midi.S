@@ -28,7 +28,7 @@ _start:
 
 	// Auto ---
 	li s3, 0x0020
-	sw s3, IOCONF_OFS(16)
+	sw s3, IOCONF_OFS(16) // on addr 0x2600_0060
 	li s3, 0x0013
 	sw s3, IOCONF_OFS(17)
 
